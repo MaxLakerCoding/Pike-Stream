@@ -1,0 +1,142 @@
+@font-face{
+    font-family: regular;
+    src: url(fonts/Manrope-Regular.ttf);
+}
+@font-face{
+    font-family: logo;
+    src: url(fonts/ChailceNogginRegular-2OXoW.ttf);
+}
+
+body{
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background: #E6E6E6;
+    height: 65px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: regular;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+.header div{
+    display: flex;
+    align-items: center;
+}
+.gap15{
+    gap: 15px;
+}
+.header .logo{
+    width: 35px;
+    height: 35px;
+}
+.header h1{
+    font-size: 20px;
+    color: #252525;
+    font-family: logo;
+}
+.header #catalog{
+    outline: none;
+    border: none;
+    background: #ffdb2a;
+    color: #435254;
+    height: 40px;
+    padding: 10px;
+    margin-left: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: .3em;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header #catalog:hover{
+    background: #f1cf27;
+    cursor: pointer;
+}
+.header #catalog > img{
+    height: 24px;
+}
+.header-button{
+    width: 28px;
+    height: 28px;
+    padding: 5px;
+    border-radius: .3em;
+    cursor: pointer;
+}
+.header-button:hover{
+    background: #c0c0c0;
+}
+.lang{
+    position: relative;
+}
+.lang .planet{
+    width: 28px;
+    height: 28px;
+}
+.lang .language{
+    height: 15px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+.search{
+    gap: 0;
+    position: relative;
+}
+.search img{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 10px;
+    pointer-events: none;
+}
+.search-field{
+    width: 680px;
+    height: 20px;   
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 18px;
+    border: none;
+    border-top-left-radius: .4em;
+    border-bottom-left-radius: .4em;
+    color: #252525;
+    font-size: 16px;
+}
+.search-field:focus{
+    outline: none;
+    color: #000000;
+}
+.search button{
+    width: 80px;
+    height: 40px;
+    margin-left: -3px;
+    padding: 7px;
+    border: none;
+    color: #435254;
+    font-size: 16px;
+    font-weight: 500;
+    border-left: 1px solid #faff5b;
+    border-radius: .4em;
+    border-top-left-radius: .2em;
+    border-bottom-left-radius: .2em;
+    background: #ffdb2a;
+    cursor: pointer;
+}
+.search button:hover{
+    background: #f1cf27;
+}
+.search button img{
+    height: 100%;
+}
