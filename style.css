@@ -16,7 +16,7 @@ body{
 }
 
 .header{
-    background: #E6E6E6;
+    background: #2A3335;
     height: 65px;
     padding-left: 25px;
     padding-right: 25px;
@@ -36,22 +36,21 @@ body{
     gap: 15px;
 }
 .header .logo{
-    width: 35px;
-    height: 35px;
+    width: 40px;
 }
 .header h1{
     font-size: 20px;
-    color: #252525;
+    color: #F0B21C;
     font-family: logo;
 }
 .header #catalog{
     outline: none;
-    border: none;
-    background: #ffdb2a;
-    color: #435254;
+    border: 2px solid #F0B21C;
+    background: transparent;
+    color: #F0B21C;
     height: 40px;
     padding: 10px;
-    margin-left: 10px;
+    margin-left: 30px;
     padding-left: 16px;
     padding-right: 16px;
     border-radius: .3em;
@@ -59,11 +58,15 @@ body{
     font-weight: bold;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 6px;
 }
 .header #catalog:hover{
-    background: #f1cf27;
+    background: #F0B21C;
+    color: #2A3335;
     cursor: pointer;
+}
+.header #catalog:hover > img{
+    content: url(img/grid-hover.svg);
 }
 .header #catalog > img{
     height: 24px;
@@ -76,20 +79,21 @@ body{
     cursor: pointer;
 }
 .header-button:hover{
-    background: #c0c0c0;
+    background: #4e4e4e;
 }
 .lang{
+    width: 60px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.lang h3{
+    color: #eaeaea;
 }
 .lang .planet{
-    width: 28px;
-    height: 28px;
-}
-.lang .language{
-    height: 15px;
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
+    width: 24px;
 }
 .search{
     gap: 0;
@@ -103,7 +107,7 @@ body{
     pointer-events: none;
 }
 .search-field{
-    width: 680px;
+    width: 600px;
     height: 20px;   
     padding: 10px;
     padding-left: 35px;
@@ -119,23 +123,23 @@ body{
     color: #000000;
 }
 .search button{
-    width: 80px;
     height: 40px;
     margin-left: -3px;
     padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: none;
-    color: #435254;
+    color: #2A3335;
     font-size: 16px;
-    font-weight: 500;
-    border-left: 1px solid #faff5b;
+    font-weight: 700;
     border-radius: .4em;
-    border-top-left-radius: .2em;
-    border-bottom-left-radius: .2em;
-    background: #ffdb2a;
+    border-top-left-radius: .3em;
+    border-bottom-left-radius: .3em;
+    background: #ffb404;
     cursor: pointer;
 }
 .search button:hover{
-    background: #f1cf27;
+    background: #ff9f04;
 }
 .search button img{
     height: 100%;
